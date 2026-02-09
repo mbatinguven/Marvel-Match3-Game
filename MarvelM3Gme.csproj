@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\arkaplan.jpg" />
+    <None Remove="Resources\batman.png" />
+    <None Remove="Resources\bomba.jpg" />
+    <None Remove="Resources\captain.png" />
+    <None Remove="Resources\gokkusagi.jpg" />
+    <None Remove="Resources\helikopter.jpg" />
+    <None Remove="Resources\hulk.png" />
+    <None Remove="Resources\ironman.png" />
+    <None Remove="Resources\marvel.jpg" />
+    <None Remove="Resources\patlama.jpg" />
+    <None Remove="Resources\roket.jpg" />
+    <None Remove="Resources\spiderman.png" />
+    <None Remove="Resources\superman.png" />
+    <None Remove="Resources\ww.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\arkaplan.jpg" />
+    <Content Include="Resources\batman.png" />
+    <Content Include="Resources\bomba.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Resources\captain.png" />
+    <Content Include="Resources\gokkusagi.jpg" />
+    <Content Include="Resources\helikopter.jpg" />
+    <Content Include="Resources\hulk.png" />
+    <Content Include="Resources\ironman.png" />
+    <Content Include="Resources\marvel.jpg" />
+    <Content Include="Resources\patlama.jpg" />
+    <Content Include="Resources\roket.jpg" />
+    <Content Include="Resources\spiderman.png" />
+    <Content Include="Resources\superman.png" />
+    <Content Include="Resources\ww.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
